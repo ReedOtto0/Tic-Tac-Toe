@@ -1,0 +1,97 @@
+.board {
+  position: relative;
+  width: min(90vw, 90vh);
+  height: min(90vw, 90vh);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 2px solid #302a27;
+  overflow: hidden;
+  color: #302a27;
+}
+
+.square {
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  padding: 2%;
+  border: 2px solid #302a27;
+}
+
+.piecePlacer {
+  width: 100%;
+  height: 100%;
+}
+
+.solidPiece {
+  color: #302a27;
+}
+
+.dashedPiece {
+  color: #f5e9df;
+}
+
+.winOverlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(200, 200, 200, 0.25);
+}
+
+.winLine {
+  position: absolute;
+  background-color: #d86a5c;
+}
+.row0 {
+  left: 0;
+  top: calc((100% / 6) - 1%);
+  width: 100%;
+  height: 2%;
+}
+.row1 {
+  left: 0;
+  top: calc((300% / 6) - 1%);
+  width: 100%;
+  height: 5%;
+}
+.row2 {
+  left: 0;
+  top: calc((500% / 6) - 1%);
+  width: 100%;
+  height: 2%;
+}
+.col0 {
+  left: calc((100% / 6) - 1%);
+  top: 0;
+  width: 2%;
+  height: 100%;
+}
+.col1 {
+  left: calc((300% / 6) - 1%);
+  top: 0;
+  width: 2%;
+  height: 100%;
+}
+.col2 {
+  left: calc((500% / 6) - 1%);
+  top: 0;
+  width: 2%;
+  height: 100%;
+}
+.diaL {
+  left: calc(50% - 1%);
+  top: -25%;
+  width: 2%;
+  height: 150%;
+  transform-origin: center;
+  transform: rotate(-45deg);
+}
+.diaR {
+  left: calc(50% - 1%);
+  top: -25%;
+  width: 2%;
+  height: 150%;
+  transform-origin: center;
+  transform: rotate(45deg);
+}
